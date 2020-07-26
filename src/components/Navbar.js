@@ -15,7 +15,7 @@ import {
     Box,
     ListItemIcon
 } from '@material-ui/core';
-import avatar from '../images/half_elf.png'
+import avatar from '../images/avatar.png'
 
 //CSS styles
 const useStyles = makeStyles(theme => ({
