@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import MobileRightDrawer from '@material-ui/core/Drawer';
 import { makeStyles } from '@material-ui/core/styles';
 import { ArrowBack, AssignmentInd, Home, Apps, ContactMail } from '@material-ui/icons'
@@ -38,11 +39,13 @@ const useStyles = makeStyles(theme => ({
 const menuItems = [
     {
         listIcon: <Home/>,
-        listText: "About"
+        listText: "About",
+        listPath: "/"
     },
     {
         listIcon: <AssignmentInd/>,
-        listText: "Experience"
+        listText: "Experience",
+        listPath: "/Experience"
     },
     {
         listIcon: <Apps/>,
@@ -73,7 +76,7 @@ const menuItems = [
         <Divider />
         <List>
             {menuItems.map((lsItem, key) => (
-                <ListItem button key={key}>
+                <ListItem button key={key} component={Link} to={lsItem.listPath}>
                 <ListItemIcon className={classes.ListItem}>
                     {lsItem.listIcon}
                 </ListItemIcon>
