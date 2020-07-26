@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACE,0FAAoE,CACpE,wBAAyB,CAEzB,qBAAsB,CACtB,gBACF","file":"main.21d3987f.chunk.css","sourcesContent":["body {\n  background: url(./images/rockymtn.jpg) no-repeat center center fixed;\n  -webkit-background: cover;\n  -moz-background: cover;\n  -moz-background: cover;\n  background: cover;\n}"]}
