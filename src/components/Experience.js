@@ -1,47 +1,162 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box } from '@material-ui/core';
 import Navbar from './Navbar';
+import { makeStyles } from '@material-ui/core/styles';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import SchoolIcon from '@material-ui/icons/School';
+import LaptopMacIcon from '@material-ui/icons/LaptopMac';
+import StarsIcon from '@material-ui/icons/Stars';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import deepOrange from '@material-ui/core/colors/deepOrange';
+import deepPurple from '@material-ui/core/colors/deepPurple';
 
-const useStyles = makeStyles(theme =>({
-    mainContainer: {
-        background: "#ffcca6"
-    },
-    timeLine: {
-        position: "relative",
-        padding: "1rem",
-        margin: "0 auto",
-        "&:before": {
-            content: "''",
-            position: "absolute",
-            height: "100%",
-            border: "1px solid tan",
-            right: "40px",
-            top: 0
-        },
-        "&:after": {
-            content: "''",
-            display: "table",
-            clear: "both"
-        },
-    }
+// const noColor = "#66000000"
+// const peachy = "#ffcca6"
+// const grape = "#615ebd"
+
+  
+const useStyles = makeStyles(theme => ({
+  paper: {
+    padding: '6px 16px',
+  },
+  secondaryTail: {
+    backgroundColor: 'purple',
+  }
 }));
 
- const Experience = () => {
-    const classes = useStyles();
-    return (
-        <>
-            <Navbar />
-            <Box component="header" className={classes.mainContainer}>
-                <Typography variant="h4" align="center">
-                    Experience
-                </Typography>
-                <Box component="div" className={classes.timeLine}>
-                    <Typography variant="h2">2020</Typography>
-                </Box>
-            </Box>
-        </>
-    );
-};
+export default function Experience() {
+  const classes = useStyles();
 
-export default Experience;
+
+  return (
+      <>
+      <Navbar />
+    <Timeline align="alternate">
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            {/* additional subtext option*/}
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <LaptopMacIcon style={{ color: deepOrange[200] }} />
+          </TimelineDot>
+          <TimelineConnector className={classes.secondaryTail} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              Code
+            </Typography>
+            <Typography>Because it&apos;s awesome!</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <StarsIcon style={{ color: deepPurple[100] }} />
+          </TimelineDot>
+          <TimelineConnector className={classes.secondaryTail} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h5" component="h1">
+                Coding-Bootcamp Certificate of Completion 2020
+            </Typography>
+            <Typography variant="h6" component="h2">University of Richmond 6 month coding bootcamp</Typography>
+            <Typography>
+                HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, 
+                Progressive Web Apps, Agile Methodology, Database Theory, MongoDB, MySQL, Git 
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <SchoolIcon style={{ color: deepOrange[200] }} />
+          </TimelineDot>
+          <TimelineConnector className={classes.secondaryTail} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h5" component="h1">
+                B.S. Software Development 2019 - 2021
+            </Typography>
+            <Typography variant="h6" component="h2">Western Governors University Online</Typography>
+            <Typography>Computer Programming, Web Development, Application Development</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <StarsIcon style={{ color: deepPurple[100] }} />
+          </TimelineDot>
+          <TimelineConnector className={classes.secondaryTail} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h5" component="h1">
+                ITIL Certified 2019
+            </Typography>
+            <Typography variant="h6" component="h2">Foundation to IT Infrastructure Library (ITIL)</Typography>
+            <Typography>
+                Enhances IT service management quality within an organization 
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <StarsIcon style={{ color: deepOrange[200] }} />
+          </TimelineDot>
+          <TimelineConnector className={classes.secondaryTail} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h5" component="h1">
+            CompTIA Project+ Certified 2019
+            </Typography>
+            <Typography variant="h6" component="h2">Project Management</Typography>
+            <Typography>
+                Project Life Cycle Management, Communication, Resources & Stakeholder Management, Project Documentation
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <StarsIcon style={{ color: deepPurple[100] }} />
+          </TimelineDot>
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h5" component="h1">
+                MTA Certified 2019
+            </Typography>
+            <Typography variant="h6" component="h2">HTML5 Application Development Fundamentals</Typography>
+            <Typography>Application Lifecycle Management, HTML5 Build UI, HTML5 Technology, Javascript, UI CSS Formatting</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
+    </>
+  );
+}
