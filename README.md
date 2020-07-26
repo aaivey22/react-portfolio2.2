@@ -1,6 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+  "homepage": "https://aaivey22.github.io/react-portfolio2.2",
+    "gh-pages": "^3.1.0",
+    "deploy": "gh-pages -d build",
 
 In the project directory, you can run:
 
