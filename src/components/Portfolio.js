@@ -65,230 +65,232 @@ const Portfolio = React.memo(function PostCard() {
     const textCardContentStyles = useN01TextInfoContentStyles();
 
     return (
-        <Box component="div">
-            <Navbar />
-            <Typography component="header" className={cardStyles.heading} variant="h4" align="center"
-                style={{ color: indigo[800] }}> PORTFOLIO </Typography>
-            <Grid container justify="center">
+        <>
+            <Box component="div">
+                <Navbar />
+                <Typography component="header" className={cardStyles.heading} variant="h4" align="center"
+                    style={{ color: indigo[800] }}> PORTFOLIO </Typography>
+                <Grid container justify="center">
 
-                <Grid spacing={2} item xs={12} sm={8} md={4}>
-                    <Card className={cx(cardStyles.root, shadowStyles.root)}>
-                        <CardMedia
-                            classes={mediaStyles}
-                            image={project3}
-                        />
-                        <Avatar className={cardStyles.avatar} src={avatar} />
-                        <CardContent className={cardStyles.content}>
-                            <TextInfoContent
-                                classes={textCardContentStyles}
-                                heading={'Inspirit'}
-                                body={
-                                    'A dynamic, full stack, MERN e-commerce site. Users are authenticated with JWT and finalize purchases with the stripe. Admin have the ability to add and delete inventory items. The Root user contains admin permissions as well as the ability to assign user roles.'
-                                }
+                    <Grid spacing={2} item xs={12} sm={8} md={4}>
+                        <Card className={cx(cardStyles.root, shadowStyles.root)}>
+                            <CardMedia
+                                classes={mediaStyles}
+                                image={project3}
                             />
-                        </CardContent>
-                        <Box px={2} pb={2} mt={-1}>
-                            <Tooltip title="LinkedIn">
-                                <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Repository">
-                                <IconButton Link color="inherit" href="https://github.com/aaivey22/inspirit2.0">
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Live Demo">
-                                <IconButton Link color="inherit" href="https://evening-citadel-47188.herokuapp.com">
-                                    <WebIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
-                    </Card>
-                </Grid>
+                            <Avatar className={cardStyles.avatar} src={avatar} />
+                            <CardContent className={cardStyles.content}>
+                                <TextInfoContent
+                                    classes={textCardContentStyles}
+                                    heading={'Inspirit'}
+                                    body={
+                                        'A dynamic, full stack, MERN e-commerce site. Users are authenticated with JWT and finalize purchases with the stripe. Admin have the ability to add and delete inventory items. The Root user contains admin permissions as well as the ability to assign user roles.'
+                                    }
+                                />
+                            </CardContent>
+                            <Box px={2} pb={2} mt={-1}>
+                                <Tooltip title="LinkedIn">
+                                    <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Repository">
+                                    <IconButton Link color="inherit" href="https://github.com/aaivey22/inspirit2.0">
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="Live Demo">
+                                    <IconButton Link color="inherit" href="https://evening-citadel-47188.herokuapp.com">
+                                        <WebIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                        </Card>
+                    </Grid>
 
-                <Grid item xs={12} sm={8} md={4}>
-                    <Card className={cx(cardStyles.root, shadowStyles.root)}>
-                        <CardMedia
-                            classes={mediaStyles}
-                            image={project1}
-                        />
-                        <Avatar className={cardStyles.avatar} src={avatar} />
-                        <CardContent className={cardStyles.content}>
-                            <TextInfoContent
-                                classes={textCardContentStyles}
-                                heading={'The Burger-Meister'}
-                                body={
-                                    'A dynamic and fun web app where users create a burger "wish-list" and then "devour" said burgers to "cross them off" the wish-list. This app features JS ES6, Node.js, MySQL, Express, Handlebars and a homemade ORM.'
-                                }
+                    <Grid item xs={12} sm={8} md={4}>
+                        <Card className={cx(cardStyles.root, shadowStyles.root)}>
+                            <CardMedia
+                                classes={mediaStyles}
+                                image={project1}
                             />
-                        </CardContent>
-                        <Box px={2} pb={2} mt={-1}>
-                            <Tooltip title="LinkedIn">
-                                <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Repository">
-                                <IconButton Link color="inherit" href="https://github.com/aaivey22/Burger-Meister">
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Live Demo">
-                                <IconButton Link color="inherit" href="https://agile-sierra-80993.herokuapp.com">
-                                    <WebIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
-                    </Card>
-                </Grid>
+                            <Avatar className={cardStyles.avatar} src={avatar} />
+                            <CardContent className={cardStyles.content}>
+                                <TextInfoContent
+                                    classes={textCardContentStyles}
+                                    heading={'The Burger-Meister'}
+                                    body={
+                                        'A dynamic and fun web app where users create a burger "wish-list" and then "devour" said burgers to "cross them off" the wish-list. This app features JS ES6, Node.js, MySQL, Express, Handlebars and a homemade ORM.'
+                                    }
+                                />
+                            </CardContent>
+                            <Box px={2} pb={2} mt={-1}>
+                                <Tooltip title="LinkedIn">
+                                    <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Repository">
+                                    <IconButton Link color="inherit" href="https://github.com/aaivey22/Burger-Meister">
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="Live Demo">
+                                    <IconButton Link color="inherit" href="https://agile-sierra-80993.herokuapp.com">
+                                        <WebIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                        </Card>
+                    </Grid>
 
-                <Grid item xs={12} sm={8} md={4}>
-                    <Card className={cx(cardStyles.root, shadowStyles.root)}>
-                        <CardMedia
-                            classes={mediaStyles}
-                            image={project2}
-                        />
-                        <Avatar className={cardStyles.avatar} src={avatar} />
-                        <CardContent className={cardStyles.content}>
-                            <TextInfoContent
-                                classes={textCardContentStyles}
-                                heading={'Jotter'}
-                                body={
-                                    'A web app for writing, saving, updating, and deleting personal notes using an Express server to save and retrieve note data from a JSON file.'
-                                }
+                    <Grid item xs={12} sm={8} md={4}>
+                        <Card className={cx(cardStyles.root, shadowStyles.root)}>
+                            <CardMedia
+                                classes={mediaStyles}
+                                image={project2}
                             />
-                        </CardContent>
-                        <Box px={2} pb={2} mt={-1}>
-                            <Tooltip title="LinkedIn">
-                                <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Repository">
-                                <IconButton Link color="inherit" href="https://github.com/aaivey22/Jotter">
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Page">
-                                <IconButton Link color="inherit" href="https://aaivey22.github.io/Jotter">
-                                    <WebIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
-                    </Card>
-                </Grid>
+                            <Avatar className={cardStyles.avatar} src={avatar} />
+                            <CardContent className={cardStyles.content}>
+                                <TextInfoContent
+                                    classes={textCardContentStyles}
+                                    heading={'Jotter'}
+                                    body={
+                                        'A web app for writing, saving, updating, and deleting personal notes using an Express server to save and retrieve note data from a JSON file.'
+                                    }
+                                />
+                            </CardContent>
+                            <Box px={2} pb={2} mt={-1}>
+                                <Tooltip title="LinkedIn">
+                                    <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Repository">
+                                    <IconButton Link color="inherit" href="https://github.com/aaivey22/Jotter">
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Page">
+                                    <IconButton Link color="inherit" href="https://aaivey22.github.io/Jotter">
+                                        <WebIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                        </Card>
+                    </Grid>
 
-                <Grid item xs={12} sm={8} md={4}>
-                    <Card className={cx(cardStyles.root, shadowStyles.root)}>
-                        <CardMedia
-                            classes={mediaStyles}
-                            image={project5}
-                        />
-                        <Avatar className={cardStyles.avatar} src={avatar} />
-                        <CardContent className={cardStyles.content}>
-                            <TextInfoContent
-                                classes={textCardContentStyles}
-                                heading={'Over Yonder'}
-                                body={
-                                    'A web app that gathers the user location and user inputs to provide information on nearby hiking trails.'
-                                }
+                    <Grid item xs={12} sm={8} md={4}>
+                        <Card className={cx(cardStyles.root, shadowStyles.root)}>
+                            <CardMedia
+                                classes={mediaStyles}
+                                image={project5}
                             />
-                        </CardContent>
-                        <Box px={2} pb={2} mt={-1}>
-                            <Tooltip title="LinkedIn">
-                                <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Repository">
-                                <IconButton Link color="inherit" href="https://github.com/childovhurin/over-yonder">
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Live Demo">
-                                <IconButton Link color="inherit" href="https://agile-sierra-80993.herokuapp.com">
-                                    <WebIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
-                    </Card>
-                </Grid>
+                            <Avatar className={cardStyles.avatar} src={avatar} />
+                            <CardContent className={cardStyles.content}>
+                                <TextInfoContent
+                                    classes={textCardContentStyles}
+                                    heading={'Over Yonder'}
+                                    body={
+                                        'A web app that gathers the user location and user inputs to provide information on nearby hiking trails.'
+                                    }
+                                />
+                            </CardContent>
+                            <Box px={2} pb={2} mt={-1}>
+                                <Tooltip title="LinkedIn">
+                                    <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Repository">
+                                    <IconButton Link color="inherit" href="https://github.com/childovhurin/over-yonder">
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="Live Demo">
+                                    <IconButton Link color="inherit" href="https://agile-sierra-80993.herokuapp.com">
+                                        <WebIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                        </Card>
+                    </Grid>
 
-                <Grid item xs={12} sm={8} md={4}>
-                    <Card className={cx(cardStyles.root, shadowStyles.root)}>
-                        <CardMedia
-                            classes={mediaStyles}
-                            image={project6}
-                        />
-                        <Avatar className={cardStyles.avatar} src={avatar} />
-                        <CardContent className={cardStyles.content}>
-                            <TextInfoContent
-                                classes={textCardContentStyles}
-                                heading={'My Familiar'}
-                                body={
-                                    'A complex web app featuring an RPG character generator form. Users are able to create new characters and access previously generated characters. Data is stored in a MySQL database.'
-                                }
+                    <Grid item xs={12} sm={8} md={4}>
+                        <Card className={cx(cardStyles.root, shadowStyles.root)}>
+                            <CardMedia
+                                classes={mediaStyles}
+                                image={project6}
                             />
-                        </CardContent>
-                        <Box px={2} pb={2} mt={-1}>
-                            <Tooltip title="LinkedIn">
-                                <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Repository">
-                                <IconButton Link color="inherit" href="https://github.com/childovhurin/My-Familiar">
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Live Demo">
-                                <IconButton Link color="inherit" href="https://murmuring-harbor-07987.herokuapp.com">
-                                    <WebIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
-                    </Card>
-                </Grid>
+                            <Avatar className={cardStyles.avatar} src={avatar} />
+                            <CardContent className={cardStyles.content}>
+                                <TextInfoContent
+                                    classes={textCardContentStyles}
+                                    heading={'My Familiar'}
+                                    body={
+                                        'A complex web app featuring an RPG character generator form. Users are able to create new characters and access previously generated characters. Data is stored in a MySQL database.'
+                                    }
+                                />
+                            </CardContent>
+                            <Box px={2} pb={2} mt={-1}>
+                                <Tooltip title="LinkedIn">
+                                    <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Repository">
+                                    <IconButton Link color="inherit" href="https://github.com/childovhurin/My-Familiar">
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="Live Demo">
+                                    <IconButton Link color="inherit" href="https://murmuring-harbor-07987.herokuapp.com">
+                                        <WebIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                        </Card>
+                    </Grid>
 
-                <Grid item xs={12} sm={8} md={4}>
-                    <Card className={cx(cardStyles.root, shadowStyles.root)}>
-                        <CardMedia
-                            classes={mediaStyles}
-                            image={project4}
-                        />
-                        <Avatar className={cardStyles.avatar} src={avatar} />
-                        <CardContent className={cardStyles.content}>
-                            <TextInfoContent
-                                classes={textCardContentStyles}
-                                heading={'Budget Buddy'}
-                                body={
-                                    'An online/offline React app that easily allows users to track their finances with standalone capabilities. Featuring JS ES6, Node.js, React, MongoDB, and Express.'
-                                }
+                    <Grid item xs={12} sm={8} md={4}>
+                        <Card className={cx(cardStyles.root, shadowStyles.root)}>
+                            <CardMedia
+                                classes={mediaStyles}
+                                image={project4}
                             />
-                        </CardContent>
-                        <Box px={2} pb={2} mt={-1}>
-                            <Tooltip title="LinkedIn">
-                                <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="GitHub Repository">
-                                <IconButton Link color="inherit" href="https://github.com/aaivey22/budget-buddy">
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Live Demo">
-                                <IconButton Link color="inherit" href="https://immense-depths-26657.herokuapp.com">
-                                    <WebIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
-                    </Card>
-                </Grid>
+                            <Avatar className={cardStyles.avatar} src={avatar} />
+                            <CardContent className={cardStyles.content}>
+                                <TextInfoContent
+                                    classes={textCardContentStyles}
+                                    heading={'Budget Buddy'}
+                                    body={
+                                        'An online/offline React app that easily allows users to track their finances with standalone capabilities. Featuring JS ES6, Node.js, React, MongoDB, and Express.'
+                                    }
+                                />
+                            </CardContent>
+                            <Box px={2} pb={2} mt={-1}>
+                                <Tooltip title="LinkedIn">
+                                    <IconButton Link color="inherit" href="https://www.linkedin.com/in/aaivey">
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="GitHub Repository">
+                                    <IconButton Link color="inherit" href="https://github.com/aaivey22/budget-buddy">
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip title="Live Demo">
+                                    <IconButton Link color="inherit" href="https://immense-depths-26657.herokuapp.com">
+                                        <WebIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                        </Card>
+                    </Grid>
 
-            </Grid>
-        </Box>
+                </Grid>
+            </Box>
+        </>
     );
 });
 

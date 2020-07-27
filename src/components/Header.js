@@ -13,9 +13,9 @@ import avatar from '../images/avatar.png'
 // CSS Styles
 const useStyles = makeStyles(theme => ({
     avatar: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
-        margin: theme.spacing(1)
+        width: theme.spacing(20),
+        height: theme.spacing(20),
+        margin: theme.spacing(2)
     },
     subtitle: {
         marginBottom: "3rem"
@@ -34,11 +34,12 @@ const useStyles = makeStyles(theme => ({
 const Header = () => {
     const classes = useStyles()
     return (
-        <Box className={classes.typedContainer}>
+        <Box>
+        <div className={classes.typedContainer}>
             <Grid container justify="center">
                 <Avatar className={classes.avatar} src={avatar} alt="Angela Ivey"/>
             </Grid>
-            <Typography style={{ color: indigo[800] }} variant="h4">
+            <Typography style={{ color: indigo[800] }} variant="h3">
                 <Typed strings={["Angela Ivey"]} typeSpeed={40} />
             </Typography>
             <br/>
@@ -46,7 +47,8 @@ const Header = () => {
                 <Typed strings={["Web Design", "Web Development", "MERN Stack"]}
                 typeSpeed={40} backSpeed={40} loop />
             </Typography>
-        </Box>        
+        </div>
+        </Box>      
     )
 };
  export default Header;

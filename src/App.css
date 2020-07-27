@@ -1,19 +1,12 @@
-body {
-  background: url('./images/rockymtn.jpg') no-repeat center center fixed;
+.root, body {
   -webkit-background: cover;
   -moz-background: cover;
   -moz-background: cover;
+  background-color: #001064;
   background: cover;
-  height: 100vh;
-}
-
-.indexContainer {
-  background-image: url('./images/rockymtn.jpg');
-  -webkit-background: cover;
-  -moz-background: cover;
-  -moz-background-: cover;
-  background: cover;
+  background-image: url(./images/rockymtn.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  height: 100vh;
 }
