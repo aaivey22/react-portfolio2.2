@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
+import Footer from './Footer';
 import Particles from 'react-particles-js';
 import {makeStyles} from "@material-ui/styles";
 
@@ -60,6 +61,7 @@ const About = () => {
             }}
         />
         </div>
+        <Footer />
         </>
     );
 };
