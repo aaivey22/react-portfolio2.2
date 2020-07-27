@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import MobileRightDrawer from '@material-ui/core/Drawer';
 import { makeStyles } from '@material-ui/core/styles';
-import { ArrowBack, AssignmentInd, Home, Apps, ContactMail } from '@material-ui/icons'
+import { AssignmentInd, Home, Apps, ContactMail, MenuOpen } from '@material-ui/icons'
 import {
     AppBar,
     Toolbar,
@@ -17,6 +17,7 @@ import {
     ListItemIcon
 } from '@material-ui/core';
 import avatar from '../images/avatar.png'
+
 
 //CSS styles
 const useStyles = makeStyles(theme => ({
@@ -95,11 +96,11 @@ const menuItems = [
                 <AppBar position="static" style={{background: "#615ebd"}}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
-                        <ArrowBack style={{color: "#ffcca6"}} />
+                        <MenuOpen fontSize="large" style={{color: "#ffcca6"}} />
                         </IconButton>
-                        <Typography variant="h5"style={{color: "tan"}}>
-                            Portfolio
-                        </Typography>
+                        {/* <Typography variant="h5"style={{color: "tan"}}>
+                            View
+                        </Typography> */}
                         <MobileRightDrawer anchor="right"
                         open={state.right} close={toggleSlider("right", false)}>
                             {sideList("right")}

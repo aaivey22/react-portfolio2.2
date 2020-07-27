@@ -7,6 +7,7 @@ import {
     Grid,
     Box
 } from '@material-ui/core';
+import indigo from '@material-ui/core/colors/indigo';
 import avatar from '../images/avatar.png'
 
 // CSS Styles
@@ -16,11 +17,7 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(15),
         margin: theme.spacing(1)
     },
-    title: {
-        color: "#615ebd"
-    },
     subtitle: {
-        color: "#615ebd",
         marginBottom: "3rem"
     },
     typedContainer: {
@@ -41,11 +38,11 @@ const Header = () => {
             <Grid container justify="center">
                 <Avatar className={classes.avatar} src={avatar} alt="Angela Ivey"/>
             </Grid>
-            <Typography className={classes.title} variant="h4">
+            <Typography style={{ color: indigo[800] }} variant="h4">
                 <Typed strings={["Angela Ivey"]} typeSpeed={40} />
             </Typography>
             <br/>
-            <Typography className={classes.subtitle} variant="h5">
+            <Typography style={{ color: indigo[500] }} className={classes.subtitle} variant="h5">
                 <Typed strings={["Web Design", "Web Development", "MERN Stack"]}
                 typeSpeed={40} backSpeed={40} loop />
             </Typography>

@@ -22,7 +22,6 @@ import { useSoftRiseShadowStyles } from '@mui-treasury/styles/shadow/softRise';
 import { useSlopeCardMediaStyles } from '@mui-treasury/styles/cardMedia/slope';
 import { useN01TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n01';
 import TextInfoContent from '@mui-treasury/components/content/textInfo';
-// import classes from '*.module.css';
 
 
 const useStyles = makeStyles(() => ({
@@ -32,6 +31,11 @@ const useStyles = makeStyles(() => ({
         backgroundColor: '#fbe9e7',
 
     },
+    card: {
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+      },
     content: {
         padding: 24,
     },
@@ -54,11 +58,11 @@ const Portfolio = React.memo(function PostCard() {
       const textCardContentStyles = useN01TextInfoContentStyles();
 
       return (
-        <Box component="div" className={cardStyles.mainContainer}>
+        <Box component="div">
         <Navbar />
         <Grid container justify="center">
 
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid spacing={2} item xs={12} sm={8} md={6}>
         <Card className={cx(cardStyles.root, shadowStyles.root)}>
           <CardMedia
             classes={mediaStyles}
