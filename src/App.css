@@ -1,7 +1,19 @@
 body {
-  background: url(./images/rockymtn.jpg) no-repeat center center fixed;
+  background: url('./images/rockymtn.jpg') no-repeat center center fixed;
   -webkit-background: cover;
   -moz-background: cover;
   -moz-background: cover;
   background: cover;
+  height: 100vh;
+}
+
+.indexContainer {
+  background-image: url('./images/rockymtn.jpg');
+  -webkit-background: cover;
+  -moz-background: cover;
+  -moz-background-: cover;
+  background: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

@@ -16,6 +16,7 @@ const About = () => {
     return (
         <>
           <Navbar />
+          <div className="indexContainer">
           <Header />
         <Particles
         canvasClassName={classes.partCanvas}
@@ -58,6 +59,7 @@ const About = () => {
                 }
             }}
         />
+        </div>
         </>
     );
 };
