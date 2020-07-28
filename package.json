@@ -1,6 +1,6 @@
 {
   "homepage": "https://aaivey22.github.io/react-portfolio2.2",
-  "name": "react-portfolio2.2",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -26,6 +26,10 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaivey22/aaivey22.github/react-portfolio2.2"
   },
   "eslintConfig": {
     "extends": "react-app"
