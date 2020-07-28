@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
     partCanvas: {
         position: "absolute",
-        opacity: "0.6"
+        opacity: "0.6",
     }
 })
 
@@ -54,7 +54,10 @@ const About = () => {
                                 opacity_min: 0.1,
                                 sync: false
                             }
-                        }
+                        },
+                        links: {
+                            enable: false,
+                        },
                     }
                 }}
             />
